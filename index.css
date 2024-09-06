@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202020;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.logoset{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 38px;
+   
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    width: 300px;
+}
+
+.search-bar img {
+    margin-left: 10px;
+}
+
+.user-menu button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #303030;
+    position: fixed;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li img {
+    margin-right: 10px;
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+    padding-top: 70px;
+    background-color: #181818;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3,1fr);
+    gap: 20px; 
+
+}
+
+.video-grid{
+    width: 320px;
+}
+
+.video {
+    width: 320px;
+    cursor: pointer;
+}
+
+.video img {
+
+    width: 320px;
+    height: auto;
+}
+
+.thumbnailprofile img {
+    height: 10px;
+}
+
+@media(max-width:800px){
+    .user-menu{
+        display: none;
+    }
+    header{
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width:600px){
+    .search-bar {
+        display: none;
+    }
+    header{
+        justify-content: left;
+    }
+}
+
+@media(max-width:560px){
+    .sidebar{
+        display: none;
+    }
+    main {
+        margin-left: 20px;
+    }
+    header{
+        justify-content: left;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(1,1fr); 
+
+    
+    }
+
+
+}
